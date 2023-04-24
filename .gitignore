@@ -9,5 +9,5 @@
 .gradle/
 .idea/
 *.class
-build/
+build/*
 */build/*

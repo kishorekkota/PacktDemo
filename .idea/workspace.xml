@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33c67f82-9194-4c7d-877d-a855d43b84a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ConsumerApp.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ConsumerApp.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ProviderApp.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ProviderApp.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PacktDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PacktDemo.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +68,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "/Users/kishorekota/git/PacktDemo/ProviderApp/src/main/resources/pacts",
+    "last_opened_file_path": "/Users/kishorekota/git/PacktDemo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,6 +80,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/ProviderApp/src/main/resources/pacts" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -195,7 +193,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681739895424</updated>
       <workItem from="1681739896877" duration="19970000" />
-      <workItem from="1682307799809" duration="2572000" />
+      <workItem from="1682307799809" duration="2736000" />
     </task>
     <servers />
   </component>
