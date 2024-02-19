@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33c67f82-9194-4c7d-877d-a855d43b84a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacktDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PacktDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/.gradle/7.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/.gradle/7.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/.gradle/7.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/.gradle/7.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/.gradle/7.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/.gradle/7.6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/.gradle/7.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/.gradle/7.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/build/libs/ProviderApp-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/build/libs/ProviderApp-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/build/libs/ProviderApp-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/build/libs/ProviderApp-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/build/reports/tests/test/classes/com.example.providerapp.ProviderContractTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/build/reports/tests/test/classes/com.example.providerapp.ProviderContractTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/build/reports/tests/test/packages/com.example.providerapp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/build/reports/tests/test/packages/com.example.providerapp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/build/test-results/test/TEST-com.example.providerapp.ProviderContractTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/build/test-results/test/TEST-com.example.providerapp.ProviderContractTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/build/test-results/test/binary/results.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +208,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681739895424</updated>
       <workItem from="1681739896877" duration="19970000" />
-      <workItem from="1682307799809" duration="2736000" />
+      <workItem from="1682307799809" duration="3349000" />
     </task>
     <servers />
   </component>

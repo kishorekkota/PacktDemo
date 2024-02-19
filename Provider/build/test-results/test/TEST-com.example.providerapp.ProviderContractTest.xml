@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.providerapp.ProviderContractTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-18T03:51:54" hostname="MacBook-Pro.local" time="0.305">
+<testsuite name="com.example.providerapp.ProviderContractTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-24T15:35:03" hostname="MacBook-Pro.local" time="0.194">
   <properties/>
-  <testcase name="APIConsumer - a request for an account" classname="com.example.providerapp.ProviderContractTest" time="0.305">
-    <failure message="java.lang.AssertionError: APIConsumer - Upon a request for an account &#10;Failures:&#10;&#10;1) Verifying a pact between APIConsumer and APIProvider - a request for an account has a matching body&#10;&#10;    1.1) body: $ Actual map is missing the following keys: active&#10;&#10;        {&#10;        -  &quot;accountId&quot;: 1001,&#10;        -  &quot;active&quot;: true,&#10;        +  &quot;accountId&quot;: 1002,&#10;        +  &quot;comment&quot;: null,&#10;          &quot;email&quot;: &quot;test@test.com&quot;,&#10;          &quot;name&quot;: &quot;John Doe&quot;,&#10;          &quot;opendate&quot;: &quot;2020-01-01&quot;&#10;        }&#10;&#10;&#10;" type="java.lang.AssertionError">java.lang.AssertionError: APIConsumer - Upon a request for an account 
+  <testcase name="APIConsumer - a request for an account" classname="com.example.providerapp.ProviderContractTest" time="0.194">
+    <failure message="java.lang.AssertionError: APIConsumer - Upon a request for an account &#10;Failures:&#10;&#10;1) Verifying a pact between APIConsumer and APIProvider - a request for an account&#10;&#10;    1.1) Connect to http://localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused&#10;&#10;" type="java.lang.AssertionError">java.lang.AssertionError: APIConsumer - Upon a request for an account 
 Failures:
 
-1) Verifying a pact between APIConsumer and APIProvider - a request for an account has a matching body
+1) Verifying a pact between APIConsumer and APIProvider - a request for an account
 
-    1.1) body: $ Actual map is missing the following keys: active
-
-        {
-        -  &quot;accountId&quot;: 1001,
-        -  &quot;active&quot;: true,
-        +  &quot;accountId&quot;: 1002,
-        +  &quot;comment&quot;: null,
-          &quot;email&quot;: &quot;test@test.com&quot;,
-          &quot;name&quot;: &quot;John Doe&quot;,
-          &quot;opendate&quot;: &quot;2020-01-01&quot;
-        }
-
+    1.1) Connect to http://localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 
 
 	at au.com.dius.pact.provider.junit5.PactVerificationContext.verifyInteraction(PactVerificationContext.kt:74)
@@ -139,21 +128,8 @@ Failures:
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <system-out><![CDATA[22:51:52.489 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProviderContractTest]: using SpringBootContextLoader
-22:51:52.493 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.example.providerapp.ProviderContractTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-22:51:52.493 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.providerapp.ProviderContractTest]: ProviderContractTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-22:51:52.507 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [ProviderContractTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, WebTestClientContextCustomizer]
-22:51:52.546 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [/Users/kishorekota/git/PacktDemo/ProviderApp/build/classes/java/main/com/example/providerapp/ProviderAppApplication.class]
-22:51:52.547 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.providerapp.ProviderAppApplication for test class com.example.providerapp.ProviderContractTest
-22:51:52.586 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-22:51:52.586 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-22:51:52.589 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [ProviderContractTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-22:51:52.589 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [ProviderContractTest], class annotated with @DirtiesContext [false] with mode [null]
-22:51:52.600 [Test worker] DEBUG au.com.dius.pact.provider.junit5.PactVerificationInvocationContextProvider -- Verifying pacts for provider 'APIProvider' and consumer 'null'
-22:51:52.787 [Test worker] DEBUG au.com.dius.pact.provider.junit5.PactVerificationInvocationContextProvider -- Pact sources on test class:
- @au.com.dius.pact.provider.junitsupport.loader.PactSource(au.com.dius.pact.provider.junitsupport.loader.PactFolderLoader.class)
-22:51:52.788 [Test worker] DEBUG au.com.dius.pact.provider.ProviderUtils -- Pact source does not have a constructor with one argument of type Class
-22:51:53.103 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener -- Performing dependency injection for test class com.example.providerapp.ProviderContractTest
+  <system-out><![CDATA[2023-04-24T10:35:02.704-05:00  INFO 46626 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.providerapp.ProviderContractTest]: ProviderContractTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-24T10:35:02.705-05:00  INFO 46626 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.providerapp.ProviderAppApplication for test class com.example.providerapp.ProviderContractTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -163,7 +139,7 @@ Failures:
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.5)
 
-2023-04-17T22:51:53.231-05:00  WARN 29452 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2023-04-24T10:35:03.029-05:00  WARN 46626 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -172,49 +148,36 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2023-04-17T22:51:53.238-05:00  INFO 29452 --- [    Test worker] c.e.providerapp.ProviderContractTest     : Starting ProviderContractTest using Java 17.0.5 with PID 29452 (started by kishorekota in /Users/kishorekota/git/PacktDemo/ProviderApp)
-2023-04-17T22:51:53.238-05:00  INFO 29452 --- [    Test worker] c.e.providerapp.ProviderContractTest     : No active profile set, falling back to 1 default profile: "default"
-2023-04-17T22:51:53.771-05:00  INFO 29452 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-04-17T22:51:53.777-05:00  INFO 29452 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-04-17T22:51:53.778-05:00  INFO 29452 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-04-17T22:51:53.838-05:00  INFO 29452 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-04-17T22:51:53.839-05:00  INFO 29452 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 480 ms
-2023-04-17T22:51:54.281-05:00  INFO 29452 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 49552 (http) with context path ''
-2023-04-17T22:51:54.288-05:00  INFO 29452 --- [    Test worker] c.e.providerapp.ProviderContractTest     : Started ProviderContractTest in 1.171 seconds (process running for 2.272)
-2023-04-17T22:51:54.367-05:00  INFO 29452 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'account is existing':SETUP
+2023-04-24T10:35:03.030-05:00  INFO 46626 --- [    Test worker] c.e.providerapp.ProviderContractTest     : Starting ProviderContractTest using Java 17.0.5 with PID 46626 (started by kishorekota in /Users/kishorekota/git/PacktDemo/Provider)
+2023-04-24T10:35:03.030-05:00  INFO 46626 --- [    Test worker] c.e.providerapp.ProviderContractTest     : No active profile set, falling back to 1 default profile: "default"
+2023-04-24T10:35:03.161-05:00  INFO 46626 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-24T10:35:03.170-05:00  INFO 46626 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-24T10:35:03.170-05:00  INFO 46626 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-24T10:35:03.225-05:00  INFO 46626 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-24T10:35:03.226-05:00  INFO 46626 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 193 ms
+2023-04-24T10:35:03.410-05:00  INFO 46626 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55609 (http) with context path ''
+2023-04-24T10:35:03.411-05:00  INFO 46626 --- [    Test worker] c.e.providerapp.ProviderContractTest     : Started ProviderContractTest in 0.394 seconds (process running for 2.4)
+2023-04-24T10:35:03.483-05:00  INFO 46626 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'account is existing':SETUP
 
 Verifying a pact between APIConsumer and APIProvider
   [Using File src/main/resources/pacts/APIConsumer-APIProvider.json]
   Given account is existing
   a request for an account
-2023-04-17T22:51:54.452-05:00  WARN 29452 --- [       Thread-5] au.com.dius.pact.core.support.Metrics    : 
+2023-04-24T10:35:03.579-05:00  WARN 46626 --- [       Thread-6] au.com.dius.pact.core.support.Metrics    : 
             Please note: we are tracking events anonymously to gather important usage statistics like JVM version
             and operating system. To disable tracking, set the 'pact_do_not_track' system property or environment
             variable to 'true'.
             
-    returns a response which
-      has status code 200 (OK)
-      has a matching body (FAILED)
+      Request Failed - Connect to http://localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 
 Failures:
 
-1) Verifying a pact between APIConsumer and APIProvider - a request for an account has a matching body
+1) Verifying a pact between APIConsumer and APIProvider - a request for an account
 
-    1.1) body: $ Actual map is missing the following keys: active
-
-        {
-        -  "accountId": 1001,
-        -  "active": true,
-        +  "accountId": 1002,
-        +  "comment": null,
-          "email": "test@test.com",
-          "name": "John Doe",
-          "opendate": "2020-01-01"
-        }
+    1.1) Connect to http://localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 
 
-
-2023-04-17T22:51:54.591-05:00  WARN 29452 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Skipping publishing of verification results as it has been disabled (pact.verifier.publishResults is not 'true')
+2023-04-24T10:35:03.604-05:00  WARN 46626 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Skipping publishing of verification results as it has been disabled (pact.verifier.publishResults is not 'true')
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
